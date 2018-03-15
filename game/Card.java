@@ -9,10 +9,17 @@ class Card {
         suit = s;
     }
 
+    public int getValue() {
+        return value;
+    }
+
+    public int getSuit() {
+        return suit;
+    }
+
     @Override
     public String toString() {
         String str = "Масть ";
-
 
         switch (suit) {
             case 1:
@@ -45,8 +52,6 @@ class Card {
             default:
                 str += value;
         }
-
-
         return str;
     }
 }
